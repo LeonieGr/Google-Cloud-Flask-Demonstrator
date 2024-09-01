@@ -1,4 +1,4 @@
-<h3 align="center">LagerManagement Demonstrator</h3>
+<h3 align="center">Lagermanagement Demonstrator</h3>
 
   <p align="center">
     A Flask-based application for managing inventory, deployed with Google Cloud.
@@ -8,7 +8,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-The **LagerManagement Demonstrator** is a demo project designed to showcase the deployment of a web application with a fully separated frontend and backend architecture. The frontend is independently deployed on the web, while the backend is securely hosted to handle data processing and storage.
+The **Lagermanagement Demonstrator** is a demo project designed to showcase the deployment of a web application with a fully separated frontend and backend architecture. The frontend is independently deployed on the web, while the backend is securely hosted to handle data processing and storage.
 
 This demonstrator implements a basic ordering system, where users can place orders and manage inventory. The system is powered by a SQL database that tracks inventory levels, processes orders, and allows for restocking. The project serves as an example of how to structure, deploy, and manage a web application using modern development practices, with a focus on scalability and maintainability.
 
