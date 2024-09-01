@@ -5,39 +5,12 @@
     <br />
 </div>
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#deployment">Deployment</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-The **LagerManagement Demonstrator** is a web application designed to manage inventory for small businesses. Built using Flask for the backend and a combination of HTML, CSS, and JavaScript for the frontend, this project showcases a simple yet effective way to handle inventory management tasks, including item tracking, stock levels, and reordering. The application is deployed on Google Cloud to demonstrate the full deployment pipeline.
+The **LagerManagement Demonstrator** is a demo project designed to showcase the deployment of a web application with a fully separated frontend and backend architecture. The frontend is independently deployed on the web, while the backend is securely hosted to handle data processing and storage.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+This demonstrator implements a basic ordering system, where users can place orders and manage inventory. The system is powered by a SQL database that tracks inventory levels, processes orders, and allows for restocking. The project serves as an example of how to structure, deploy, and manage a web application using modern development practices, with a focus on scalability and maintainability.
 
 ### Built With
 
@@ -84,10 +57,10 @@ Install frontend dependencies:
 ```sh
 npm install
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p> <!-- USAGE EXAMPLES -->
 
 ### Deployment
 To deploy the application to Google Cloud, follow the Deployment Guide provided in this repository.
-<p align="right">(<a href="#readme-top">back to top</a>)</p> <!-- USAGE EXAMPLES -->
 
 ### Contributing
 
@@ -104,6 +77,8 @@ To contribute:
 ### License
 
 Distributed under the GNU GENERAL PUBLIC LICENSE. See LICENSE.txt for more information.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
