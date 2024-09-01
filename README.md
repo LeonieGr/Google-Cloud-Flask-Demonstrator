@@ -60,7 +60,7 @@ npm install
 <p align="right">(<a href="#readme-top">back to top</a>)</p> <!-- USAGE EXAMPLES -->
 
 ### Deployment
-To deploy the application to Google Cloud, follow the [Deployment Guide](/main/Deployment_Instructions/)
+To deploy the application to Google Cloud, follow the [Deployment Guide](/main/deploymentGuide/)
  provided in this repository.
 
 ### Contributing
