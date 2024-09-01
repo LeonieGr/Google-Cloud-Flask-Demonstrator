@@ -42,12 +42,12 @@ npm install npm@latest -g
 ### Installation
 Clone the repository:
 ```sh
-git clone https://github.com/your_username/lagermanagement-demonstrator.git
+git clone https://github.com/your_username/Lagermanagement_Demonstrator.git
 ```
 
 Navigate to the project directory:
 ```sh
-cd lagermanagement-demonstrator
+cd Lagermanagement_Demonstrator
 ```
 Install Python dependencies:
 ```sh
