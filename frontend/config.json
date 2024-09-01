@@ -1,0 +1,5 @@
+{
+    "BACKEND_URL": "https://chatty-windows-fetch.loca.lt",
+    "BACKEND_USER": "admin",
+    "BACKEND_PASS": "secret"
+  }

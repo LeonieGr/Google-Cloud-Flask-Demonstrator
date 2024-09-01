@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lagermanagement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+
+</head>
+<body class="bg-gray-100 p-6">
+
+    <div class="fixed top-0 left-0 w-full bg-gray-100 shadow-lg z-10">
+        <div class="container mx-auto px-5 py-3 flex justify-between items-center">
+            <img src="{{ url_for('static', filename='img/dfki_Logo_digital_black.svg') }}" alt="Image1" class="h-20 w-70">
+            <h1 class="text-black text-3xl font-bold mr-4">Lagermanagement Demonstrator</h1>
+
+            <div class="flex items-center">
+                <img src="{{ url_for('static', filename='img/green-ai-hub-mittelstand.svg') }}" alt="Image2" class="h-20 w-70">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="max-w-md mx-auto bg-white rounded-lg shadow-md p-6 mt-24">
+        <h1 class="text-2xl font-bold mb-4 text-center">Willkommen zur Bestellungsverwaltung</h1>
+
+        <h2 class="text-xl font-semibold b-4">Neue Bestellung</h2>
+
+        <form action="/" method="post" class="space-y-4">
+
+            <div class="mb-4">
+                <label for="bestelldatum" class="block text-sm font-medium text-gray-700">Bestelldatum:</label>
+                <input type="datetime-local" id="bestelldatum" name="bestelldatum" required class="mt-1 p-2 border rounded w-full">
+            </div>
+
+            <div class="mb-4">
+                <h3 class="text-lg font-semibold mb-2">Produkte auswählen</h3>
+                <div id="product-list" class="space-y-2">
+                </div>
+            </div> 
+
+            <div>
+                <input type="submit" value="Bestellung aufgeben" class="w-full bg-blue-950 text-white p-2 rounded hover:bg-blue-900">
+            </div>
+        </form>
+        
+        <form action="/reset" method="post" class="mt-4">
+            <button type="submit" class="w-full bg-red-600 text-white p-2 rounded hover:bg-red-700">Lagerbestand zurücksetzen</button>
+        </form>
+    </div>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        <div class="mb-4">
+        {% for category, message in messages %}
+            <div class="text-white px-6 py-4 border-0 rounded relative mb-4 bg-{{ 'green-500' if category == 'success' else 'red-500' }}">
+            {{ message }}
+            </div>
+        {% endfor %}
+        </div>
+    {% endif %}
+    {% endwith %}
+
+    <div class="flex justify-center mt-12">
+        <img src="{{ url_for('static', filename='img/green-ai-hub-keyvisual.svg') }}" alt="Image3">
+    </div>
+
+    <div class="flex justify-center items-center h-24 mt-24 bg-blue-950">
+        <p class="text-white">Leonie Grafweg &copy; DFKI 2024</p>
+    </div>
+</body>
+</html>
