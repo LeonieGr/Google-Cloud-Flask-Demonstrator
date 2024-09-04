@@ -85,6 +85,10 @@ Obwohl Google Cloud einen kostenlosen Testzeitraum bietet, musst du dennoch ein 
 ### 2.4 Zugriffsberechtigungen einstellen
 Stelle sicher, dass du die richtigen Zugriffsberechtigungen hast, um Projekte zu erstellen und zu verwalten. Dies kannst du unter "IAM & Verwaltung" in der Google Cloud Console überprüfen.
 
+### 2.5 Kosten
+Die F1-Instanz ist die günstigste und kleinste Variante in der Google Cloud und steht in der Standardkonfiguration kostenlos zur Verfügung. Das bedeutet, dass bei geringer Nutzung (z.B. für Uni-Projekte, Demonstratoren etc.) keine Gebühren anfallen. Allerdings ist es wichtig zu wissen, dass bei besonders hoher Nachfrage die Google Cloud automatisch zusätzliche Instanzen startet, um die erhöhte Last zu bewältigen. Diese zusätzlichen Instanzen sind nicht kostenlos, was dazu führen kann, dass bei höherem Nutzeraufkommen oder unerwarteten Spitzen schnell Kosten entstehen. **Warnung:** Nutzer sollten sich dieser automatischen Skalierung bewusst sein und entsprechende Vorkehrungen treffen, um unvorhergesehene Ausgaben zu vermeiden, wie zum Beispiel das Setzen von Kostengrenzen oder Warnungen in der Google Cloud Console.
+
+
 ## 3. Deployment der Flask-Anwendung
 
 ### 3.1 Authentifizierung

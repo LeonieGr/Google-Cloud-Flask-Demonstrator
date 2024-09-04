@@ -9,7 +9,7 @@ Before we start deploying, make sure you meet the following prerequisites:
 3. **Google Cloud SDK**: Install the [Google Cloud SDK](https://cloud.google.com/sdk/docs/install).
 4. **Flask application**: An already working Flask application.
 
-#1 Create the Flask application
+### 1. Create the Flask application
 
 Start by creating a Flask application. It is important to strictly separate the frontend and backend so that the frontend can later be made available online independently of the backend.
 
@@ -70,7 +70,7 @@ handlers:
 ```
 This configuration specifies that your application will run under the Python 3.9 runtime environment and how static files should be handled. It also defines the entrypoint.
 
-## 2 Set up Google Cloud
+## 2. Set up Google Cloud
 
 ### 2.1 Sign in to Google Cloud
 Log in to your Google Cloud account and create a new project. This project will be used to host your Flask application.
@@ -84,7 +84,10 @@ Although Google Cloud offers a free trial period, you still need to set up a pay
 ### 2.4 Setting access permissions
 Make sure you have the right access permissions to create and manage projects. You can check this under “IAM & Administration” in the Google Cloud Console.
 
-## 3 Deployment of the Flask application
+### 2.5 Cost
+The F1 instance is the smallest and most affordable option in Google Cloud, and it is available for free in the default configuration. This means that with low usage, there are no charges (i.e. university projects, demonstrators etc.). However, it's important to note that if demand increases significantly, Google Cloud will automatically spawn additional instances to handle the increased load. These additional instances are not free, which can result in quickly escalating costs with higher user traffic or unexpected spikes. **Warning:** Users should be aware of this automatic scaling and take necessary precautions, such as setting cost limits or alerts in the Google Cloud Console, to avoid unforeseen expenses.
+
+## 3. Deployment of the Flask application
 
 ### 3.1 Authentication
 Authenticate yourself with your Google Cloud account:
@@ -116,7 +119,6 @@ This command takes the app.yaml file and deploys the application to App Engine. 
 
 ### 3.5 Display application
 Once the deployment has been successfully completed, you can display your application in the browser:
-
 
 
 ```bash
